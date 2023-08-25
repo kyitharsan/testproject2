@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Web Exercise
+	</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Verdana,sans-serif;
+			margin: 0px;
+			letter-spacing: 3px;
+		}
+		.container{
+			width:95%;
+			margin: auto;
+		}
+		.header{			
+			/*overflow: hidden;*/			
+			background: #fff;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 1;
+
+z-index: 1;		}
+		.h-left{
+			float: left;
+		}
+		.h-right{
+			float: right;
+			overflow: hidden;
+		}
+		.h-right a{		
+			float: left;
+			font-size: 16px;
+			color: #333;
+			text-decoration: none;
+			margin-top:20px;
+			margin-left: 25px;
+			display: block;
+			padding: 10px 20px;
+
+		}
+		.h-left h3:hover,.h-right a:hover{
+			background: #d4d4d4;
+			padding: 10px 20px;
+		}
+		.slide-img{
+			overflow: hidden;
+			margin-top: 0px;
+			height: 500px;	
+			width: 100%;		
+			background: url('home.jpg') no-repeat;
+			color: white;			
+			text-align: center;			
+		}
+		.br{
+			background: #333;
+			padding: 20px;
+			opacity: 0.9;
+		}
+		.slide-img h1{
+			padding-top: 200px;
+			padding-bottom: 20px;
+		}
+		hr{
+			border:1px solid #ebebeb;
+		}
+		.p-col{
+			width: 25%;
+			float: left;
+			padding: 10px;
+			position: relative;
+		}
+		.p-col img{
+			width: 100%;
+			height: 200px;
+			
+		}
+		.p-col .p-caption{
+			top: 10px;
+			left: 10px;
+			position: absolute;
+			background: black;
+			color: white;
+			padding: 10px 15px;
+		}
+		.row::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.btn{
+			background: #f1f1f1!important;
+			width: 100%;
+			padding: 10px 20px;
+			border: none;
+		}
+		input[type='text']{
+			width: 100%;
+			padding: 10px 20px;
+			font-size: 14px;
+			border: 1px solid lightgray;
+		}
+		.c-btn{
+			background: black;
+			color: #fff;
+			padding: 10px 20px;
+			margin-bottom: 20px;
+		}
+		.footer{
+			background: black;
+			color: white;
+			text-align: center;
+			padding: 20px;
+		}
+		/*responsive*/
+		@media screen and (max-width: 700px)
+		{
+			.h-left,.p-col{
+				float: none;
+				width: 100%;
+				
+			}
+			.h-right{
+				display: none;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="h-left">
+				<h3>BR Architects</h3>			
+			</div>
+			<div class="h-right">
+				<a href="#project">Projects</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>				
+			</div>			
+		</div>		
+	</div>
+	<!-- header -->
+	<!-- slide-img -->
+	<div class="slide-img">
+		<h1><span class="br">BR</span> Architects</h1>		
+	</div>
+	<!-- slide-img -->
+	<!-- project -->
+	<div id="project">
+		<div class="container">
+			<h2>Project</h2>
+			<hr>
+			<div class="row">
+				<div class="p-col">
+					<img src="p1.jpg">
+					<span class="p-caption">Summer House</span>					
+				</div>
+				<div class="p-col">
+					<img src="p2.jpg">
+					<span class="p-caption">Brick House</span>					
+				</div>	
+				<div class="p-col">
+					<img src="p3.jpg">
+					<span class="p-caption">Renovated</span>					
+				</div>	
+				<div class="p-col">
+					<img src="p4.jpg">
+					<span class="p-caption">Barn House</span>					
+				</div>	
+				<div class="p-col">
+					<img src="p5.jpg">
+					<span class="p-caption">Summer House</span>					
+				</div>
+				<div class="p-col">
+					<img src="p6.jpg">
+					<span class="p-caption">Brick House</span>					
+				</div>	
+				<div class="p-col">
+					<img src="p7.jpg">
+					<span class="p-caption">Renovated</span>					
+				</div>	
+				<div class="p-col">
+					<img src="p8.jpg">
+					<span class="p-caption">Barn House</span>					
+				</div>					
+			</div>			
+		</div>	
+	</div>	
+	<!-- project -->
+	<!-- about -->
+	<div id="about">
+		<div class="container">
+			<h2>About</h2>
+			<hr>
+			<p style="padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="row">
+				<div class="p-col">
+					<img src="a-1.jpg">
+					<h2>John Doe</h2>
+					<p>CEO & Founder</p>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+					<button class="btn">Contact</button>					
+				</div>
+				<div class="p-col">
+					<img src="a-2.jpg">
+					<h2>Jane Doe</h2>
+					<p>Architect</p>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+					<button class="btn">Contact</button>					
+				</div>
+				<div class="p-col">
+					<img src="a-3.jpg">
+					<h2>Mike Ross</h2>
+					<p>Architect</p>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+					<button class="btn">Contact</button>					
+				</div>
+				<div class="p-col">
+					<img src="a-4.jpg">
+					<h2>Dan Star</h2>
+					<p>Architect</p>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+					<button class="btn">Contact</button>					
+				</div>				
+			</div>		
+		</div>		
+	</div>
+	<!-- about -->
+	<!-- contact us -->
+	<div id="contact">
+		<div class="container">
+			<h2>Contact Us</h2>
+			<hr>
+			<p>Lets get in touch and talk about your next project.</p>
+			<input type="text" placeholder="Name"><br><br>
+			<input type="text" placeholder="Email"><br><br>
+			<input type="text" placeholder="Subject"><br><br>
+			<input type="text" placeholder="Comment"><br><br>
+			<button class="c-btn">SEND MESSAGE</button>				
+		</div>				
+	</div>
+	<!-- contact us -->
+	<!-- footer -->
+	<div class="footer">
+		<p>Powered by w3.css</p>		
+	</div>
+	<!-- footer -->
+</body>
+</html>
